@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+
+
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+
+body {
+    background-color: var(--Very-Light-Gray);
+}
+
+.container {
+    display: block;
+   /*  justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column; */
+    height: 65rem;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    width: 100%;
+}
+
+.head {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#frist {
+    font-size: 25px;
+    font-weight: 200;
+
+}
+
+#second {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.head p {
+    margin-top: 12px;
+    font-size: 15px;
+    color: var(--Grayish-Blue);
+    width: 60%;
+    text-align: center;
+}
+
+.supervisor,
+.Team-Builder,
+.Karma,
+.Calculator {
+
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    
+    background-color: white;
+    padding: 25px;
+    box-shadow: 1px 10px 47px -20px rgb(164, 207, 224);
+    border-radius: 9px;
+}
+
+
+#sem{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 2.5;
+}
+
+.box p{
+    color: var(--Grayish-Blue);
+    font-size: 14px;
+    line-height: 2;
+    
+}
+
+
+.supervisor {
+    position: absolute;
+    left: 66px;
+    top: 500px;
+    height: auto;
+    width: 27%;
+    border-top: 4px solid var(--Blue);
+    flex-direction: column;
+
+}
+
+.Team-Builder {
+    position: absolute;
+    left: 36%;
+    top: 300px;
+    height: auto;
+    width: 27%;
+    border-top: 4px solid var(--Red);
+    flex-direction: column;
+
+}
+
+.Karma {
+    position: absolute;
+    left: 67%;
+    top: 500px;
+    height: auto;
+    width: 27%;
+    border-top: 4px solid var(--Cyan);
+    flex-direction: column;
+
+}
+
+.Calculator {
+    position: absolute;
+    left: 36%;
+    top: 650px;
+    height: auto;
+    width: 27%;
+    border-top: 4px solid var(--Orange);
+    flex-direction: column;
+
+}
+.icon img{
+    float: right;
+    display: flex;
+    margin: 40px 0 8px 0;
+}
+
+@media (max-width: 817px){
+    .supervisor{
+        left: 40px;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 640px){
+    .Calculator{
+        top: 500px;
+    }
+    .Karma{
+        width: 163px;
+    }
+    .supervisor{
+        left: 19px;
+    }
+    .Team-Builder{
+        width: 91%;
+        left: 20px;
+        height: 12rem;
+    }
+    .Team-Builder img{
+        display: flex;
+        position: relative;
+        top: 40px;
+        left: -5rem;
+    }
+    
+}
+
+@media (max-width: 500px){
+    .supervisor{
+        top: 45%;
+        left: 8%;
+        width: 25rem;
+    }
+    .Team-Builder{
+        left: 8%;
+        width: 25rem;
+        top: 95%;
+    }
+    .Calculator{
+        width: 25rem;
+        left: 8%;
+        top: 150%;
+    }
+    .Karma{
+        width: 25rem;
+        left: 8%;
+        top: 205%;
+    }
+    .header{
+        display: block;
+        height: 100rem;
+    }
+}
+
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Red: hsl(0, 78%, 62%)
+- Cyan: hsl(180, 62%, 55%)
+- Orange: hsl(34, 97%, 64%)
+- Blue: hsl(212, 86%, 64%)
+
+### Neutral
+
+- Very Dark Blue: hsl(234, 12%, 34%)
+- Grayish Blue: hsl(229, 6%, 66%)
+- Very Light Gray: hsl(0, 0%, 98%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Fonts
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 200, 400, 600 */
